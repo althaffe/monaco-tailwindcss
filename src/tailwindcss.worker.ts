@@ -50,7 +50,7 @@ export interface TailwindcssWorker {
   resolveCompletionItem: (item: CompletionItem) => CompletionItem
 }
 
-async function stateFromConfig(
+export async function stateFromConfig(
   configPromise: PromiseLike<TailwindConfig> | TailwindConfig
 ): Promise<JitState> {
   const preparedTailwindConfig = await configPromise
