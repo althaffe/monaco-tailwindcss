@@ -15,7 +15,7 @@
     "examples/*"
   ],
   "scripts": {
-    "prepack": "node build.js",
+    "prepare": "node build.js",
     "start": "npm --workspace demo start"
   },
   "exports": {
